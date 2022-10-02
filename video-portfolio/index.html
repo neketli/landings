@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Портфолио | Татьяна Лихимович</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <main class="page">
+        <div class="page__wrapper">
+          <!-- Intro section -->
+          <div class="page__screen screen">
+            <div class="screen__content">
+              <div class="intro">
+                <div class="intro__text">
+                  <h2 class="screen__title screen__tite-intro">О, привет</h2>
+
+                  <h1 class="screen__tite-main">
+                    Я Татьяна Лихимович <br />
+                    и я — <span class="_anim-text">видеомонтажёр</span>
+                  </h1>
+                </div>
+
+                <div class="screen__image">
+                  <img src="img/main.png" alt="Татьяна Лихимович" />
+                </div>
+              </div>
+            </div>
+
+            <div class="screen__body">
+              <div class="screen__bg">
+                <img src="img/bg/bg.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Features section -->
+          <div class="page__screen screen">
+            <div class="screen__content">
+              <div class="features">
+                <h2 class="screen__title">Сделаем проект?</h2>
+
+                <div class="features__wrapper">
+                  <span class="screen__text screen__text-left">
+                    Пройдём вместе все стадии <br />
+                    <span class="_anim-text">от идеи до “video123final.mp4”</span>
+                  </span>
+
+                  <span class="screen__text screen__text-right">
+                    Работаем на осуществление даже <br />
+                    <span class="_anim-text">самых смелых затей</span>
+                  </span>
+                  <span class="screen__text screen__text-left">
+                    Работаем серьёзно<br />
+
+                    <span class="_anim-text">с ТЗ и прочей бюрократией</span>
+                  </span>
+                  <span class="screen__text screen__text-right ">
+                    Или не очень серьёзно, но всё равно<br />
+                    <span class="_anim-text">качественно и в фирменном стиле </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="screen__body">
+              <div class="screen__bg">
+                <img src="img/bg/bg2.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- About section -->
+          <div class="page__screen screen">
+            <div class="screen__content">
+              <h2 class="screen__title">Немного обо мне</h2>
+
+              <div class="cards">
+                <div class="cards__wrapper _anim">
+                  <div class="cards__item">
+                    <img src="img/icons/1.png" alt="" class="cards__logo" />
+                    <h3 class="cards__header">Достижения</h3>
+                    <p class="cards__text"
+                      >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Fringilla tellus quis augue velit neque elit justo. Varius
+                      eu nibh a, mattis. Varius auctor duis proin amet, duis
+                      diam. Maecenas proin facilisi varius consectetur
+                      pellentesque sodales nisi.</p
+                    >
+                  </div>
+                  <div class="cards__item">
+                    <img src="img/icons/2.png" alt="" class="cards__logo" />
+                    <h3 class="cards__header">Опыт работы</h3>
+                    <p class="cards__text"
+                      >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Fringilla tellus quis augue velit neque elit justo. Varius
+                      eu nibh a, mattis. Varius auctor duis proin amet, duis
+                      diam. Maecenas proin facilisi varius consectetur
+                      pellentesque sodales nisi.</p
+                    >
+                  </div>
+                  <div class="cards__item">
+                    <img src="img/icons/3.png" alt="" class="cards__logo" />
+                    <h3 class="cards__header">Hard-skills</h3>
+                    <p class="cards__text"
+                      >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Fringilla tellus quis augue velit neque elit justo. Varius
+                      eu nibh a, mattis. Varius auctor duis proin amet, duis
+                      diam. Maecenas proin facilisi varius consectetur
+                      pellentesque sodales nisi.</span
+                    >
+                  </div>
+                  <div class="cards__item">
+                    <img src="img/icons/4.png" alt="" class="cards__logo" />
+                    <h3 class="cards__header">Soft-skills</h3>
+                    <p class="cards__text"
+                      >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Fringilla tellus quis augue velit neque elit justo. Varius
+                      eu nibh a, mattis. Varius auctor duis proin amet, duis
+                      diam. Maecenas proin facilisi varius consectetur
+                      pellentesque sodales nisi.</p
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="screen__body">
+              <div class="screen__bg">
+                <img src="img/bg/bg3.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Examples section -->
+          <div class="page__screen screen">
+            <div class="screen__content">
+              <h2 class="screen__title">Примеры моих работ</h2>
+
+              <div class="examples">
+                <div class="examples__wrapper">
+                  <div class="video-slider">
+                    <video id="video-slider" controls autoplay muted loop>
+                      <source src="videos/2.mp4" type="video/mp4" />
+                    </video>
+                    <ul class="video-slider__nav">
+                      <li
+                        onclick="setVideoUrl('videos/1.mp4')"
+                        class="video-slider__item"
+                      >
+                        <img
+                          src="img/previews/1.png"
+                          alt=""
+                          class="video-slider__item-img"
+                        />
+                      </li>
+                      <li
+                        onclick="setVideoUrl('videos/2.mp4')"
+                        class="video-slider__item"
+                      >
+                        <img
+                          src="img/previews/2.png"
+                          alt=""
+                          class="video-slider__item-img"
+                        />
+                      </li>
+                      <li
+                        onclick="setVideoUrl('videos/3.mp4')"
+                        class="video-slider__item"
+                      >
+                        <img
+                          src="img/previews/3.png"
+                          alt=""
+                          class="video-slider__item-img"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+
+                  <a href="#" class="btn examples__button">Узнать больше</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="screen__body">
+              <div class="screen__bg">
+                <img src="img/bg/bg.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Contacts section -->
+          <div class="page__screen screen">
+            <div class="screen__content">
+              <h2 class="screen__title">Давайте работать?</h2>
+
+              <div class="contacts _anim">
+                <div class="contacts__slider slider">
+                  <div class="slider__item">
+                    <a class="btn" href="#">Мой телеграм</a>
+                    <a href="#"><img src="img/tg.png" alt="" /></a>
+                  </div>
+                  <div class="slider__item">
+                    <a class="btn" href="#">Мой телеграм</a>
+                    <a href="#"><img src="img/tg.png" alt="" /></a>
+                  </div>
+                  <div class="slider__item">
+                    <a class="btn" href="#">Мой телеграм</a>
+                    <a href="#"><img src="img/tg.png" alt="" /></a>
+                  </div>
+                  <div class="slider__item">
+                    <a class="btn" href="#">Мой телеграм</a>
+                    <a href="#"><img src="img/tg.png" alt="" /></a>
+                  </div>
+
+                  <a class="slider__item-prev" onclick="prevSlide()"
+                    >&#10094;</a
+                  >
+                  <a class="slider__item-next" onclick="nextSlide()"
+                    >&#10095;</a
+                  >
+                </div>
+                <div class="slider__nav">
+                  <span class="slider__nav-item" onclick="setSlide(0)"></span>
+                  <span class="slider__nav-item" onclick="setSlide(1)"></span>
+                  <span class="slider__nav-item" onclick="setSlide(2)"></span>
+                  <span class="slider__nav-item" onclick="setSlide(3)"></span>
+                </div>
+                <!-- end contacts -->
+              </div>
+            </div>
+			<div class="screen__body">
+              <div class="screen__bg">
+                <img src="img/bg/bg4.png" alt="" />
+              </div>
+            </div>
+            <!-- end screen -->
+          </div>
+
+          
+        </div>
+		<div class="page__pagination page__pagination-load"></div>
+		<div class="page__scroll"></div>
+      </main>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+$primary-white: #e6f0f3;
+$primary-black: #022231;
+$primay-bluesky: #8ac5f0;
+$primary-blue: #3398e0;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+
+  color: $primary-black;
+}
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__card {
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    background-color: #e6f0f3;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 100%;
+    background-size: cover;
+    perspective: 1000px;
+    background: linear-gradient(200deg, #4780A8, $primay-bluesky,$primary-black, $primary-blue);
+    background-size: 400% 400%;
+    animation: gradient 6s ease infinite;
+    overflow: hidden;
+	border-radius: 10px 0 0 10px;
+
+
+
+    & img {
+      display: flex;
+      max-width: 100%;
+      transform-style: preserve-3d;
+      &::after {
+        background: inherit;
+        content: "";
+        position: absolute;
+        display: block;
+        left: -60px;
+        top: 40px;
+        width: 100%;
+        height: 108%;
+        z-index: -1;
+        filter: blur(55px);
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 102%;
+  }
+
+  &__inner {
+    width: 66%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & h1 {
+      font-size: 3rem;
+      text-align: center;
+      color: $primary-black;
+    }
+  }
+
+  &__item {
+    font-family: "Nunito";
+    display: flex;
+    flex-direction: column-reverse;
+    width: 42vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  input {
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-top: 30px;
+    border-bottom: 0.1rem solid $primary-black;
+    background-color: #d2d9db;
+    outline: none;
+    text-align: center;
+  }
+
+  label {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    color: #9cacbf;
+    transform: translateY(5rem);
+    transform-origin: left top;
+    cursor: text;
+    transition: all 0.3s;
+  }
+
+  input:focus,
+  input:not(:placeholder-shown) {
+    transition: all 0.2s linear;
+    border-bottom: 0.2rem solid $primay-bluesky;
+    background-color: #ffffff;
+  }
+
+  input:focus ~ label,
+  input:not(:placeholder-shown) ~ label {
+    padding: 0;
+    color: $primary-black;
+    transform: translateY(1rem) scale(1);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__btn {
+    margin: 30px auto;
+    text-align: center;
+
+    .btn {
+      &::after {
+        transform: skewX(-45deg) scale(0, 1);
+      }
+      &:hover::after {
+        transform: skewX(-45deg) scale(1, 1);
+      }
+    }
+  }
+
+  &__register {
+    color: $primary-black;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-decoration: none;
+
+    &:visited {
+      color: $primary-black;
+    }
+  }
+}
+
+.btn {
+  margin: 1rem auto;
+  width: 24vw;
+  height: 70px;
+  font-size: 1.5rem;
+  border-radius: 16px;
+  background: $primary-blue;
+  color: #ffffff;
+  border: 0.25rem solid $primary-blue;
+
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.4s linear;
+
+  &:hover {
+    color: $primary-black;
+    box-shadow: 0 0 20px $primay-bluesky;
+  }
+  &::after {
+    content: "";
+    background: $primay-bluesky;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+
+    transition: all 0.4s linear;
+  }
+  &::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(45deg) scale(0, 1);
+
+    transition: all 0.4s linear;
+  }
+  &:hover::after {
+    transform: skewX(45deg) scale(1, 1);
+
+    transition: all 0.4s linear;
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media (max-width: 769px) {
+
+}
+
+@media (max-width: 426px) {
+
+  .login {
+    &__img {
+      display: none;
+    }
+
+    &__inner {
+      width: 100%;
+    }
+
+    &__item {
+      width: 80%;
+    }
+
+  }
+  
+}

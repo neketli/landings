@@ -2,13 +2,13 @@
 
 В этом репозитории собрана коллекция моих лендингов, дизайнов и просто вёрстки :sunglasses:
 
-Галлерея [здесь :floppy_disk:]()
+Галлерея [здесь :floppy_disk:](https://neketli.github.io/landings/)
 
 ## Landing page :star:
 
 ### Мясной гастроном :cut_of_meat:
 
-myasnoy-bataysk.ru
+[myasnoy-bataysk.ru](myasnoy-bataysk.ru)
 
 ![Мясной](./preview/myasnoy.png)
 
@@ -18,7 +18,7 @@ myasnoy-bataysk.ru
 
 ### Букинг агенство "Батарея" :guitar:
 
-[Ссылка]()
+[Ссылка](https://neketli.github.io/landings/rock-landing)
 
 ![Рок-лендинг](./preview/rock.png)
 
@@ -28,9 +28,9 @@ html, scss, js + simple adaptive slider
 
 ### Портфолио видеомонтажёра :movie_camera:
 
-[Ссылка]()
+[Ссылка](https://neketli.github.io/landings/video-portfolio)
 
-![Рок-лендинг](./preview/video.png)
+![Портфолио](./preview/video.png)
 
 Очень хотелось реализовать идею поэкранной прокрутки.
 html, scss, js + swiper
@@ -39,11 +39,11 @@ html, scss, js + swiper
 
 ## Прочее :closed_book:
 
-### Страница входа 
+### Страница входа
 
-[Ссылка]()
+[Ссылка](https://neketli.github.io/landings/ddg-login-form)
 
-![Рок-лендинг](./preview/login.png)
+![Страница входа](./preview/login.png)
 
 Реализовано в рамках хакатона, по кейсу ddos-guard.net - authetify.
 [Дизайн](https://www.figma.com/file/pJd96Dxhr3euT0xjAvBHSL/dstu-hackathon-spring-2022)
